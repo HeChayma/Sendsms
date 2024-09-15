@@ -8,19 +8,28 @@
 </head>
 <body>
     
-    <div>
-        <p>Send SMS</p>
+    <div class="head">
+        <div class="img">
+            <img src="logoSMS.png" alt="logo">
+        </div>
+        <div class="nam">
+            <p>Send SMS</p>
+        </div>
+       
     </div>
     <div class="cont">
 
         <form action="SenSMS.php" method="POST">
-            <label for="Nphone">Phone number </label>
-            <input id="Nphone" type="text" value="Enter the phone number" name="Nph">
-            <br>
-            <label for="Mss">Message </label>
-            <input id="Mss" type="text" value="Enter the message" name="message">
-            <br>
-            <input type="submit" value="Send" name="subM">
+            <div class="input-group">
+                <label for="Nphone">Phone number </label>
+                <input id="Nphone" type="text" placeholder="Enter the phone number" name="Nph">
+            </div>
+            
+            <div class="input-group">
+                <label for="Mss">Message </label>
+                <input id="Mss" type="text" placeholder="Enter the message" name="message">
+            </div>
+            <input type="submit" value="Send" name="subM" >
         </form>
  
     </div>
